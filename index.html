@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <script type="text/javascript">
+$(document).ready(function()
+{
+    var navItems = $('.admin-menu li > a');
+    var navListItems = $('.admin-menu li');
+    var allWells = $('.admin-content');
+    var allWellsExceptFirst = $('.admin-content:not(:first)');
+    
+    allWellsExceptFirst.hide();
+    navItems.click(function(e)
+    {
+        e.preventDefault();
+        navListItems.removeClass('active');
+        $(this).closest('li').addClass('active');
+        
+        allWells.hide();
+        var target = $(this).attr('data-target-id');
+        $('#' + target).show();
+    });
+});
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked admin-menu">
+                <li class="active"><a href="#" data-target-id="home"><i class="fa fa-home fa-fw"></i>Home</a></li>
+                <li><a href="#" data-target-id="widgets"><i class="fa fa-list-alt fa-fw"></i>Widgets</a></li>
+                <li><a href="#" data-target-id="pages"><i class="fa fa-file-o fa-fw"></i>Pages</a></li>
+                
+            </ul>
+        </div>
+        <div class="col-md-9 well admin-content" id="home">
+            <p>
+                Hello! This is a forked snippet.<br>
+                It is for users, which use one-page layouts.
+            </p>
+            <p>
+                Here's the original one from BhaumikPatel: <a href="http://bootsnipp.com/snippets/featured/vertical-admin-menu" target="_BLANK">Vertical Admin Menu</a>
+                <br><br>
+                <strong>Thank you Bhaumik!</strong>
+            </p>
+        </div>
+        <div class="col-md-9 well admin-content" id="widgets">
+            Widgets
+        </div>
+        <div class="col-md-9 well admin-content" id="pages">
+          <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="images/Hopetoun_falls.jpg" alt="" width="400" height="250" />
+                <div class="caption">                    
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                               <a href="http://www.youtube.com" >Youtube</a></p>
+                        </div>
+        </div>
+    </div>
+</div>
+</div>
+    <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="images/Hopetoun_falls.jpg" alt="" width="400" height="250" />
+                <div class="caption">                    
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                               <a href="http://www.youtube.com" >Youtube</a></p>
+                        </div>
+        </div>
+    </div>
+</div>
+</div>
+    <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="images/Hopetoun_falls.jpg" alt="" width="400" height="250" />
+                <div class="caption">                    
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                               <a href="http://www.youtube.com" >Youtube</a></p>
+                        </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="images/Hopetoun_falls.jpg" alt="" width="400" height="250" />
+                <div class="caption">                    
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                               <a href="http://www.youtube.com" >Youtube</a></p>
+                        </div>
+        </div>
+    </div>
+</div>
+</div>
+    <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="images/Hopetoun_falls.jpg" alt="" width="400" height="250" />
+                <div class="caption">                    
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                               <a href="http://www.youtube.com" >Youtube</a></p>
+                        </div>
+        </div>
+    </div>
+</div>
+</div>
+    <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="images/Hopetoun_falls.jpg" alt="" width="400" height="250" />
+                <div class="caption">                    
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                               <a href="http://www.youtube.com" >Youtube</a></p>
+                        </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
